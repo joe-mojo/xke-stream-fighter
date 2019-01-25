@@ -61,7 +61,7 @@ services:
       KAFKA_BROKERS: kafka:9092
       START_LAG: 20
     volumes:
-      - ./fighter-processors/src/main/resources/scripts:/opt/docker/scripts/
+      - ./fighter-processors/src/main/resources/scripts:/home/docker/scripts/
 
   app-processorapi:
     image: fighter-processors:0.1.0-SNAPSHOT
@@ -75,4 +75,4 @@ services:
       KAFKA_BROKERS: kafka:9092
       START_LAG: 20
     volumes:
-      - ./fighter-processors/src/main/resources/scripts:/opt/docker/scripts/
+      - ./fighter-processors/src/main/resources/scripts:/home/docker/scripts/
